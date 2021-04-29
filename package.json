@@ -1,0 +1,35 @@
+{
+	"name": "websocketschat",
+	"version": "1.0.0",
+	"description": "Simple WebCocket Chat App",
+	"main": "index.js",
+	"scripts": {
+		"sass": "sass --watch scss:public/css",
+		"start": "babel-node index.js",
+		"start:dev": "nodemon  --ignore public/ --exec npm run start -e js"
+	},
+	"author": "Hector Osuna",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.1",
+		"socket.io": "^3.0.3"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.12.8",
+		"@babel/core": "^7.12.9",
+		"@babel/node": "^7.12.6",
+		"@babel/preset-env": "^7.12.7",
+		"nodemon": "^2.0.6",
+		"sass": "^1.29.0"
+	},
+	"babel": {
+		"presets": [
+			"@babel/preset-env"
+		]
+	},
+	"nodemonConfig": {
+		"ignore": [
+			"public/*"
+		]
+	}
+}

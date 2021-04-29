@@ -1,0 +1,52 @@
+h2 {
+	color: blue;
+}
+
+div.chat-form {
+	height: 50vh;
+	width: 70vw;
+	border: 2px solid black;
+	display: flex;
+	flex-direction: column;
+}
+
+div.messages {
+	height: max-content;
+	flex-grow: 1;
+	background-color: #aaa;
+	display: flex;
+	flex-direction: column;
+}
+
+input.nickname {
+	width: 98%;
+	margin: 0;
+	padding: 0;
+}
+
+p.author {
+	margin: 0;
+	padding: 0;
+	font-size: 20;
+	font-weight: bolder;
+}
+
+p.message {
+	margin: 0;
+	padding: 0;
+}
+
+div.other-message {
+	padding: 10px;
+	background-color: white;
+	border-radius: 100px;
+	max-width: 50%;
+}
+
+div.my-message {
+	padding: 10px;
+	background-color: rgb(0, 153, 255);
+	border-radius: 100px;
+	max-width: 50%;
+	align-self: flex-end;
+}
